@@ -92,4 +92,13 @@ public class GradeServiceTest {
 		int newPrice= scan.nextInt();
 		gradeservice.update1(new Grade(id, newPrice));
 	}
+	
+	@Test
+	public void update2() {
+		Scanner scan = new Scanner(System.in);
+		System.out.println("輸入姓名即要更改的成績");
+		String id = scan.next();
+		int newPrice= scan.nextInt();
+		gradeservice.update1(new Grade(id, newPrice));
+	}
 }
